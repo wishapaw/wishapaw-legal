@@ -1,9 +1,10 @@
+cat > docs/index.html << 'EOF'
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WishAPaw - A gentle companion for medical treatment</title>
+    <title>WishAPaw - Legal Documents</title>
     <style>
         * {
             margin: 0;
@@ -12,92 +13,102 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #2C2839;
-            background: linear-gradient(135deg, #FFF5F7 0%, #F5F0FF 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #FAEFCC 0%, #FDEB9E 100%);
             min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             padding: 20px;
         }
         
         .container {
-            max-width: 800px;
-            margin: 0 auto;
             background: white;
-            border-radius: 24px;
-            padding: 40px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(123, 83, 47, 0.15);
+            padding: 50px 40px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .app-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+            line-height: 1;
         }
         
         h1 {
-            color: #9B7EBD;
-            font-size: 48px;
-            margin-bottom: 16px;
-            text-align: center;
+            color: #7B532F;
+            font-size: 32px;
+            margin-bottom: 10px;
         }
         
         .tagline {
-            text-align: center;
-            color: #6B6B82;
-            font-size: 20px;
+            color: #666;
+            font-size: 18px;
             margin-bottom: 40px;
         }
         
         .links {
             display: flex;
             flex-direction: column;
-            gap: 16px;
-            margin-top: 32px;
+            gap: 15px;
         }
         
         .link-card {
-            display: block;
-            padding: 24px;
-            background: linear-gradient(135deg, #9B7EBD 0%, #B4A3D6 100%);
+            background: linear-gradient(135deg, #FDEB9E 0%, #7B532F 100%);
             color: white;
+            padding: 20px;
+            border-radius: 12px;
             text-decoration: none;
-            border-radius: 16px;
             transition: transform 0.2s, box-shadow 0.2s;
-            text-align: center;
-            font-size: 18px;
-            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
         
         .link-card:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(155, 126, 189, 0.3);
+            box-shadow: 0 5px 20px rgba(123, 83, 47, 0.3);
         }
         
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            color: #6B6B82;
+        .link-text {
+            text-align: left;
+        }
+        
+        .link-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .link-description {
             font-size: 14px;
+            opacity: 0.9;
         }
         
-        .app-icon {
-            width: 120px;
-            height: 120px;
-            margin: 0 auto 24px;
-            background: linear-gradient(135deg, #9B7EBD 0%, #FFB5C5 100%);
-            border-radius: 28px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 64px;
+        .arrow {
+            font-size: 24px;
+        }
+        
+        footer {
+            margin-top: 40px;
+            color: #7B532F;
+            font-size: 14px;
         }
         
         @media (max-width: 600px) {
             .container {
-                padding: 24px;
+                padding: 30px 20px;
             }
             
             h1 {
-                font-size: 36px;
+                font-size: 28px;
             }
             
-            .tagline {
-                font-size: 16px;
+            .app-icon {
+                font-size: 60px;
             }
         }
     </style>
@@ -106,17 +117,30 @@
     <div class="container">
         <div class="app-icon">🐾</div>
         <h1>WishAPaw</h1>
-        <p class="tagline">A gentle companion that helps children navigate medical treatment with courage and confidence.</p>
+        <p class="tagline">Making pet wishes come true</p>
         
         <div class="links">
-            <a href="privacy.html" class="link-card">Privacy Policy</a>
-            <a href="terms.html" class="link-card">Terms of Service</a>
+            <a href="privacy.html" class="link-card">
+                <div class="link-text">
+                    <div class="link-title">Privacy Policy</div>
+                    <div class="link-description">How we protect your data</div>
+                </div>
+                <div class="arrow">→</div>
+            </a>
+            
+            <a href="terms.html" class="link-card">
+                <div class="link-text">
+                    <div class="link-title">Terms of Service</div>
+                    <div class="link-description">Our terms and conditions</div>
+                </div>
+                <div class="arrow">→</div>
+            </a>
         </div>
         
-        <div class="footer">
-            <p>Contact: <a href="mailto:contact.wishapaw@gmail.com" style="color: #9B7EBD;">contact.wishapaw@gmail.com</a></p>
-            <p style="margin-top: 8px;">© 2026 WishAPaw. All rights reserved.</p>
-        </div>
+        <footer>
+            &copy; 2026 WishAPaw. All rights reserved.
+        </footer>
     </div>
 </body>
 </html>
+EOF

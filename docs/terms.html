@@ -12,289 +12,185 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background: linear-gradient(135deg, #FFF5F7 0%, #F5F0FF 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #ffeef8 0%, #e8f4ff 100%);
+            padding: 20px;
             min-height: 100vh;
-            padding: 40px 20px;
         }
         
         .container {
             max-width: 800px;
             margin: 0 auto;
             background: white;
+            padding: 40px;
             border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(155, 126, 189, 0.15);
-            padding: 50px;
-        }
-        
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding-bottom: 30px;
-            border-bottom: 2px solid #F5F0FF;
-        }
-        
-        .app-icon {
-            font-size: 60px;
-            margin-bottom: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
         }
         
         h1 {
-            color: #9B7EBD;
-            font-size: 32px;
+            font-size: 2.5em;
+            color: #9b87d4;
             margin-bottom: 10px;
         }
         
+        .paw-emoji {
+            font-size: 1.2em;
+        }
+        
         .last-updated {
-            color: #999;
-            font-size: 14px;
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
         }
         
         h2 {
-            color: #9B7EBD;
-            font-size: 24px;
+            font-size: 1.5em;
+            color: #2c3e50;
             margin-top: 30px;
             margin-bottom: 15px;
         }
         
         p {
-            color: #333;
-            line-height: 1.8;
             margin-bottom: 15px;
+            color: #34495e;
         }
         
         ul {
-            color: #333;
-            line-height: 1.8;
             margin-left: 20px;
             margin-bottom: 15px;
         }
         
         li {
             margin-bottom: 8px;
+            color: #34495e;
         }
         
         .contact {
-            background: #F5F0FF;
+            background: #f8f9fa;
             padding: 20px;
-            border-radius: 12px;
-            margin-top: 30px;
-            text-align: center;
+            border-radius: 10px;
+            margin-top: 20px;
         }
         
         .contact a {
-            color: #9B7EBD;
+            color: #9b87d4;
             text-decoration: none;
             font-weight: 600;
         }
         
-        .back-link {
-            display: inline-block;
-            margin-top: 30px;
-            color: #9B7EBD;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        
-        .back-link:hover {
+        .contact a:hover {
             text-decoration: underline;
+        }
+        
+        .warning {
+            background: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .warning strong {
+            color: #856404;
         }
         
         @media (max-width: 600px) {
             .container {
-                padding: 30px 20px;
+                padding: 20px;
             }
             
             h1 {
-                font-size: 28px;
-            }
-            
-            h2 {
-                font-size: 20px;
+                font-size: 2em;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <div class="app-icon">🐾</div>
-            <h1>Terms of Service</h1>
-            <p class="last-updated">Last Updated: June 24, 2026</p>
+        <h1><span class="paw-emoji">🐾</span> Terms of Service</h1>
+        <p class="last-updated">Last updated: June 24, 2026</p>
+        
+        <h2>Acceptance of Terms</h2>
+        <p>By using WishAPaw, you agree to these terms. If you're a child, please have a parent or caregiver review these with you.</p>
+        
+        <h2>Age Requirements</h2>
+        <p>WishAPaw is designed for children of all ages, but must be used under the supervision and with the consent of a parent or legal guardian.</p>
+        
+        <h2>Appropriate Use</h2>
+        <p>WishAPaw is a supportive tool to help children feel brave during medical treatment. It should be used:</p>
+        <ul>
+            <li>As a companion tool, not medical advice</li>
+            <li>With caregiver guidance and supervision</li>
+            <li>In a kind and positive manner</li>
+        </ul>
+        
+        <div class="warning">
+            <h2>Medical Disclaimer</h2>
+            <p><strong>IMPORTANT:</strong> WishAPaw does NOT:</p>
+            <ul>
+                <li>Provide medical advice or treatment</li>
+                <li>Replace communication with healthcare providers</li>
+                <li>Diagnose or treat medical conditions</li>
+                <li>Monitor actual medical treatment</li>
+            </ul>
+            <p><strong>Always follow your doctor's instructions and ask questions if you're unsure about your treatment.</strong></p>
         </div>
         
-        <p>Welcome to WishAPaw! These Terms of Service ("Terms") govern your access to and use of the WishAPaw mobile application. By using WishAPaw, you agree to be bound by these Terms.</p>
-        
-        <h2>1. Acceptance of Terms</h2>
-        <p>By downloading, accessing, or using WishAPaw, you agree to:</p>
+        <h2>User Responsibilities</h2>
+        <p>Parents and caregivers are responsible for:</p>
         <ul>
-            <li>Be bound by these Terms of Service</li>
-            <li>Comply with our Privacy Policy</li>
-            <li>Follow all applicable laws and regulations</li>
-            <li>Be at least 13 years old, or have parental consent if younger</li>
-        </ul>
-        <p>If you do not agree to these Terms, please do not use the app.</p>
-        
-        <h2>2. Description of Service</h2>
-        <p>WishAPaw is a mobile application that helps pet owners:</p>
-        <ul>
-            <li>Create and manage wish lists for their pets</li>
-            <li>Track pet-related goals and milestones</li>
-            <li>Organize pet care tasks and reminders</li>
-            <li>Store pet information and memories</li>
-        </ul>
-        <p>We reserve the right to modify, suspend, or discontinue any part of the service at any time.</p>
-        
-        <h2>3. User Accounts</h2>
-        
-        <h3 style="color: #666; font-size: 18px; margin: 20px 0 10px 0;">Account Creation</h3>
-        <p>To use WishAPaw, you must create an account. You agree to:</p>
-        <ul>
-            <li>Provide accurate and complete information</li>
-            <li>Keep your account credentials secure</li>
-            <li>Notify us immediately of any unauthorized access</li>
-            <li>Be responsible for all activities under your account</li>
+            <li>Supervising their child's use of the app</li>
+            <li>Ensuring the app is used appropriately</li>
+            <li>Making all medical decisions in consultation with healthcare providers</li>
+            <li>Maintaining the security of their device</li>
         </ul>
         
-        <h3 style="color: #666; font-size: 18px; margin: 20px 0 10px 0;">Account Termination</h3>
-        <p>You may delete your account at any time through the app settings. We may suspend or terminate accounts that violate these Terms.</p>
+        <h2>Data and Privacy</h2>
+        <p>Your use of WishAPaw is also governed by our <a href="privacy-policy.html">Privacy Policy</a>. Please review it to understand how we handle data.</p>
         
-        <h2>4. User Content and Conduct</h2>
-        
-        <h3 style="color: #666; font-size: 18px; margin: 20px 0 10px 0;">Your Content</h3>
-        <p>You retain ownership of all content you create in WishAPaw (pet information, wishes, photos, etc.). By using the app, you grant us a license to store and process this content solely to provide the service.</p>
-        
-        <h3 style="color: #666; font-size: 18px; margin: 20px 0 10px 0;">Prohibited Conduct</h3>
-        <p>You agree NOT to:</p>
+        <h2>Limitation of Liability</h2>
+        <p>WishAPaw is provided "as is" without warranties of any kind, either express or implied. We are not liable for any damages arising from:</p>
         <ul>
-            <li>Use the app for any illegal purpose</li>
-            <li>Upload harmful, offensive, or inappropriate content</li>
-            <li>Attempt to hack, reverse engineer, or compromise the app's security</li>
-            <li>Abuse, harass, or harm other users</li>
-            <li>Violate any third-party rights</li>
-            <li>Use automated tools to access the app without permission</li>
-            <li>Impersonate others or provide false information</li>
+            <li>Use or inability to use the app</li>
+            <li>Medical decisions made while using the app</li>
+            <li>Any data loss or device issues</li>
+            <li>Interruption of service</li>
         </ul>
         
-        <h2>5. Intellectual Property</h2>
-        <p>WishAPaw and its original content, features, and functionality are owned by WishAPaw and are protected by international copyright, trademark, and other intellectual property laws.</p>
-        <p>You may not:</p>
-        <ul>
-            <li>Copy, modify, or distribute the app or its content</li>
-            <li>Use our trademarks or branding without permission</li>
-            <li>Remove any copyright or proprietary notices</li>
-        </ul>
+        <h2>Intellectual Property</h2>
+        <p>All content in WishAPaw, including text, graphics, logos, and software, is the property of WishAPaw and is protected by copyright and trademark laws.</p>
         
-        <h2>6. Privacy and Data</h2>
-        <p>Your privacy is important to us. Our collection and use of personal information is described in our <a href="privacy.html" style="color: #9B7EBD;">Privacy Policy</a>. By using WishAPaw, you consent to our data practices as described there.</p>
+        <h2>Changes to Terms</h2>
+        <p>We may update these terms from time to time. Continued use of the app after changes means you accept the new terms. We will notify users of significant changes through the app.</p>
         
-        <h2>7. Disclaimers and Limitations</h2>
+        <h2>Termination</h2>
+        <p>You may stop using WishAPaw at any time by deleting the app from your device. We reserve the right to terminate or restrict access to the app for violations of these terms.</p>
         
-        <h3 style="color: #666; font-size: 18px; margin: 20px 0 10px 0;">No Warranty</h3>
-        <p>WishAPaw is provided "AS IS" and "AS AVAILABLE" without warranties of any kind. We do not guarantee that:</p>
-        <ul>
-            <li>The app will be error-free or uninterrupted</li>
-            <li>Defects will be corrected</li>
-            <li>The app is free of viruses or harmful components</li>
-            <li>Results from using the app will meet your expectations</li>
-        </ul>
+        <h2>Governing Law</h2>
+        <p>These terms are governed by the laws of [Your State/Country], without regard to conflict of law provisions.</p>
         
-        <h3 style="color: #666; font-size: 18px; margin: 20px 0 10px 0;">Limitation of Liability</h3>
-        <p>To the maximum extent permitted by law, WishAPaw shall not be liable for:</p>
-        <ul>
-            <li>Any indirect, incidental, special, or consequential damages</li>
-            <li>Loss of data, profits, or business opportunities</li>
-            <li>Damages resulting from your use or inability to use the app</li>
-            <li>Any third-party content or conduct</li>
-        </ul>
-        
-        <h2>8. Indemnification</h2>
-        <p>You agree to indemnify and hold harmless WishAPaw from any claims, losses, damages, liabilities, and expenses arising from:</p>
-        <ul>
-            <li>Your use of the app</li>
-            <li>Your violation of these Terms</li>
-            <li>Your violation of any rights of another party</li>
-            <li>Your content or conduct</li>
-        </ul>
-        
-        <h2>9. Third-Party Links and Services</h2>
-        <p>WishAPaw may contain links to third-party websites or services. We are not responsible for:</p>
-        <ul>
-            <li>The content or practices of third-party sites</li>
-            <li>Your interactions with third parties</li>
-            <li>Damages arising from third-party services</li>
-        </ul>
-        <p>Your use of third-party services is at your own risk.</p>
-        
-        <h2>10. Children's Use</h2>
-        <p>WishAPaw complies with COPPA (Children's Online Privacy Protection Act). If you are under 13:</p>
-        <ul>
-            <li>You must have parental permission to use the app</li>
-            <li>Your parent/guardian agrees to these Terms on your behalf</li>
-            <li>We limit the data we collect as described in our Privacy Policy</li>
-        </ul>
-        <p>Parents can contact us at any time to review, modify, or delete their child's information.</p>
-        
-        <h2>11. Updates and Modifications</h2>
-        
-        <h3 style="color: #666; font-size: 18px; margin: 20px 0 10px 0;">App Updates</h3>
-        <p>We may update WishAPaw from time to time to:</p>
-        <ul>
-            <li>Add new features</li>
-            <li>Fix bugs and improve performance</li>
-            <li>Enhance security</li>
-            <li>Comply with legal requirements</li>
-        </ul>
-        
-        <h3 style="color: #666; font-size: 18px; margin: 20px 0 10px 0;">Terms Updates</h3>
-        <p>We may revise these Terms at any time. Material changes will be communicated through:</p>
-        <ul>
-            <li>In-app notifications</li>
-            <li>Email (if provided)</li>
-            <li>Updated "Last Updated" date on this page</li>
-        </ul>
-        <p>Your continued use of the app after changes constitutes acceptance of the new Terms.</p>
-        
-        <h2>12. Termination</h2>
-        <p>We may terminate or suspend your access to WishAPaw immediately, without notice, for:</p>
-        <ul>
-            <li>Violation of these Terms</li>
-            <li>Illegal or harmful conduct</li>
-            <li>Requests by law enforcement</li>
-            <li>Technical or security issues</li>
-        </ul>
-        <p>Upon termination, your right to use the app ceases immediately. Sections that should survive termination (like disclaimers, indemnification, etc.) will continue to apply.</p>
-        
-        <h2>13. Governing Law</h2>
-        <p>These Terms are governed by and construed in accordance with applicable laws, without regard to conflict of law principles. Any disputes shall be resolved in the appropriate courts.</p>
-        
-        <h2>14. Dispute Resolution</h2>
-        <p>If you have a dispute with WishAPaw:</p>
-        <ul>
-            <li>Contact us first to try to resolve it informally</li>
-            <li>If unresolved, disputes may be subject to binding arbitration</li>
-            <li>You agree to resolve disputes individually, not as part of a class action</li>
-        </ul>
-        
-        <h2>15. Severability</h2>
-        <p>If any provision of these Terms is found to be unenforceable or invalid, that provision will be limited or eliminated to the minimum extent necessary, and the remaining provisions will remain in full force and effect.</p>
-        
-        <h2>16. Entire Agreement</h2>
-        <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and WishAPaw regarding the use of the app.</p>
-        
-        <h2>17. Contact Information</h2>
-        <p>If you have any questions about these Terms of Service, please contact us:</p>
+        <h2>Severability</h2>
+        <p>If any provision of these terms is found to be unenforceable, the remaining provisions will continue in full effect.</p>
         
         <div class="contact">
-            <p><strong>Email:</strong> <a href="mailto:contact.wishapaw@gmail.com">contact.wishapaw@gmail.com</a></p>
-            <p><strong>App:</strong> WishAPaw</p>
+            <h2>Contact Us</h2>
+            <p>Questions about these terms? Contact us at:</p>
+            <p><a href="mailto:contact.wishapaw@gmail.com">contact.wishapaw@gmail.com</a></p>
+            
+            <p style="margin-top: 15px;"><strong>Mailing Address:</strong><br>
+            [Your Company Name]<br>
+            [Your Address Line 1]<br>
+            [City, State ZIP]<br>
+            [Country]</p>
         </div>
         
-        <p style="margin-top: 30px; color: #999; font-size: 14px; text-align: center;">
-            By using WishAPaw, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.
+        <p style="margin-top: 40px; padding-top: 20px; border-top: 2px solid #f0f0f0; color: #7f8c8d; font-size: 0.9em;">
+            WishAPaw is a supportive companion for children undergoing medical treatment. Made with 💛 for brave kids everywhere.
         </p>
-        
-        <a href="index.html" class="back-link">← Back to Legal Documents</a>
     </div>
 </body>
 </html>

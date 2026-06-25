@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WishAPaw - Legal Documents</title>
+    <title>WishAPaw - Legal</title>
     <style>
         * {
             margin: 0;
@@ -12,40 +12,41 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background: linear-gradient(135deg, #FFF5F7 0%, #F5F0FF 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #ffeef8 0%, #e8f4ff 100%);
+            padding: 20px;
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px;
         }
         
         .container {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(155, 126, 189, 0.15);
-            padding: 50px 40px;
             max-width: 600px;
-            width: 100%;
+            margin: 0 auto;
+            background: white;
+            padding: 60px 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
         
-        .app-icon {
+        .logo {
             font-size: 80px;
             margin-bottom: 20px;
-            line-height: 1;
         }
         
         h1 {
-            color: #9B7EBD;
-            font-size: 32px;
-            margin-bottom: 10px;
+            font-size: 2.5em;
+            color: #9b87d4;
+            margin-bottom: 15px;
         }
         
         .tagline {
-            color: #666;
-            font-size: 18px;
+            color: #7f8c8d;
+            font-size: 1.1em;
             margin-bottom: 40px;
         }
         
@@ -53,60 +54,58 @@
             display: flex;
             flex-direction: column;
             gap: 15px;
-        }
-        
-        .link-card {
-            background: linear-gradient(135deg, #9B7EBD 0%, #D4C5E2 100%);
-            color: white;
-            padding: 20px;
-            border-radius: 12px;
-            text-decoration: none;
-            transition: transform 0.2s, box-shadow 0.2s;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        
-        .link-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 20px rgba(155, 126, 189, 0.3);
-        }
-        
-        .link-text {
-            text-align: left;
-        }
-        
-        .link-title {
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 5px;
-        }
-        
-        .link-description {
-            font-size: 14px;
-            opacity: 0.9;
-        }
-        
-        .arrow {
-            font-size: 24px;
-        }
-        
-        footer {
             margin-top: 40px;
-            color: #999;
-            font-size: 14px;
+        }
+        
+        .link-button {
+            display: block;
+            padding: 20px 30px;
+            background: linear-gradient(135deg, #9b87d4 0%, #d4a5d4 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 15px;
+            font-size: 1.1em;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(155, 135, 212, 0.3);
+        }
+        
+        .link-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(155, 135, 212, 0.4);
+        }
+        
+        .link-button:active {
+            transform: translateY(0);
+        }
+        
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #f0f0f0;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        
+        .footer a {
+            color: #9b87d4;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
         }
         
         @media (max-width: 600px) {
             .container {
-                padding: 30px 20px;
+                padding: 40px 20px;
             }
             
             h1 {
-                font-size: 28px;
+                font-size: 2em;
             }
             
-            .app-icon {
+            .logo {
                 font-size: 60px;
             }
         }
@@ -114,31 +113,25 @@
 </head>
 <body>
     <div class="container">
-        <div class="app-icon">🐾</div>
+        <div class="logo">🐾</div>
         <h1>WishAPaw</h1>
-        <p class="tagline">Making pet wishes come true</p>
+        <p class="tagline">A gentle companion for brave kids</p>
         
         <div class="links">
-            <a href="privacy.html" class="link-card">
-                <div class="link-text">
-                    <div class="link-title">Privacy Policy</div>
-                    <div class="link-description">How we protect your data</div>
-                </div>
-                <div class="arrow">→</div>
+            <a href="privacy-policy.html" class="link-button">
+                📄 Privacy Policy
             </a>
             
-            <a href="terms.html" class="link-card">
-                <div class="link-text">
-                    <div class="link-title">Terms of Service</div>
-                    <div class="link-description">Our terms and conditions</div>
-                </div>
-                <div class="arrow">→</div>
+            <a href="terms-of-service.html" class="link-button">
+                📋 Terms of Service
             </a>
         </div>
         
-        <footer>
-            &copy; 2026 WishAPaw. All rights reserved.
-        </footer>
+        <div class="footer">
+            <p><strong>Contact Us</strong></p>
+            <p><a href="mailto:contact.wishapaw@gmail.com">contact.wishapaw@gmail.com</a></p>
+            <p style="margin-top: 20px;">Made with 💛 for brave kids everywhere</p>
+        </div>
     </div>
 </body>
 </html>

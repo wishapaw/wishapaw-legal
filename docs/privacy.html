@@ -12,213 +12,167 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background: linear-gradient(135deg, #FFF5F7 0%, #F5F0FF 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #ffeef8 0%, #e8f4ff 100%);
+            padding: 20px;
             min-height: 100vh;
-            padding: 40px 20px;
         }
         
         .container {
             max-width: 800px;
             margin: 0 auto;
             background: white;
+            padding: 40px;
             border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(155, 126, 189, 0.15);
-            padding: 50px;
-        }
-        
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding-bottom: 30px;
-            border-bottom: 2px solid #F5F0FF;
-        }
-        
-        .app-icon {
-            font-size: 60px;
-            margin-bottom: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
         }
         
         h1 {
-            color: #9B7EBD;
-            font-size: 32px;
+            font-size: 2.5em;
+            color: #9b87d4;
             margin-bottom: 10px;
         }
         
+        .paw-emoji {
+            font-size: 1.2em;
+        }
+        
         .last-updated {
-            color: #999;
-            font-size: 14px;
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
         }
         
         h2 {
-            color: #9B7EBD;
-            font-size: 24px;
+            font-size: 1.5em;
+            color: #2c3e50;
             margin-top: 30px;
             margin-bottom: 15px;
         }
         
         p {
-            color: #333;
-            line-height: 1.8;
             margin-bottom: 15px;
+            color: #34495e;
         }
         
         ul {
-            color: #333;
-            line-height: 1.8;
             margin-left: 20px;
             margin-bottom: 15px;
         }
         
         li {
             margin-bottom: 8px;
+            color: #34495e;
         }
         
         .contact {
-            background: #F5F0FF;
+            background: #f8f9fa;
             padding: 20px;
-            border-radius: 12px;
-            margin-top: 30px;
-            text-align: center;
+            border-radius: 10px;
+            margin-top: 20px;
         }
         
         .contact a {
-            color: #9B7EBD;
+            color: #9b87d4;
             text-decoration: none;
             font-weight: 600;
         }
         
-        .back-link {
-            display: inline-block;
-            margin-top: 30px;
-            color: #9B7EBD;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        
-        .back-link:hover {
+        .contact a:hover {
             text-decoration: underline;
+        }
+        
+        .highlight {
+            background: #fff9e6;
+            padding: 15px;
+            border-left: 4px solid #f0c674;
+            margin: 20px 0;
+            border-radius: 5px;
         }
         
         @media (max-width: 600px) {
             .container {
-                padding: 30px 20px;
+                padding: 20px;
             }
             
             h1 {
-                font-size: 28px;
-            }
-            
-            h2 {
-                font-size: 20px;
+                font-size: 2em;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <div class="app-icon">🐾</div>
-            <h1>Privacy Policy</h1>
-            <p class="last-updated">Last Updated: June 24, 2026</p>
+        <h1><span class="paw-emoji">🐾</span> Privacy Policy</h1>
+        <p class="last-updated">Last updated: June 24, 2026</p>
+        
+        <h2>Our Commitment</h2>
+        <p>WishAPaw is designed to support children during medical treatment. We take your privacy and your child's safety very seriously.</p>
+        
+        <h2>Information We Collect</h2>
+        <p>WishAPaw currently stores all data locally on your device:</p>
+        <ul>
+            <li>Treatment journey progress</li>
+            <li>Mood check-in history</li>
+            <li>Paws earned and courage cards unlocked</li>
+            <li>App preferences and settings</li>
+        </ul>
+        <p><strong>No personal information is sent to external servers at this time.</strong></p>
+        
+        <h2>Children's Privacy (COPPA Compliance)</h2>
+        <p>WishAPaw is intended for use by children under the supervision of a parent or caregiver. We do not knowingly collect personal information from children without parental consent.</p>
+        <p>Parents and caregivers should review this policy and supervise their child's use of the app.</p>
+        
+        <div class="highlight">
+            <p><strong>Important:</strong> All data remains on your device. We do not collect, transmit, or store any personal information on external servers.</p>
         </div>
         
-        <p>At WishAPaw, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.</p>
+        <h2>Data Storage</h2>
+        <p>All data is stored locally using iOS UserDefaults. Data remains on your device and is included in device backups (iCloud or iTunes).</p>
         
-        <h2>1. Information We Collect</h2>
+        <h2>Medical Disclaimer</h2>
+        <p>WishAPaw is NOT a medical app and does not provide medical advice. It is a supportive companion tool. Always consult with your healthcare provider for medical decisions.</p>
         
-        <h3 style="color: #666; font-size: 18px; margin: 20px 0 10px 0;">Information You Provide</h3>
+        <h2>Data Deletion</h2>
+        <p>You can delete all app data at any time by:</p>
         <ul>
-            <li><strong>Account Information:</strong> Name, email address, and profile information</li>
-            <li><strong>Pet Information:</strong> Pet names, photos, and wish list items</li>
-            <li><strong>User Content:</strong> Wishes, notes, and other content you create</li>
+            <li>Using the "Reset All Progress" button in Settings, or</li>
+            <li>Deleting the app from your device</li>
         </ul>
         
-        <h3 style="color: #666; font-size: 18px; margin: 20px 0 10px 0;">Information Collected Automatically</h3>
+        <h2>Third-Party Services</h2>
+        <p>WishAPaw does not currently use any third-party analytics, advertising, or tracking services.</p>
+        
+        <h2>Changes to This Policy</h2>
+        <p>We may update this policy from time to time. The "Last updated" date will reflect when changes were made. We will notify users of significant changes through the app.</p>
+        
+        <h2>Your Rights</h2>
+        <p>Since all data is stored locally on your device, you have complete control over your information. You can:</p>
         <ul>
-            <li><strong>Device Information:</strong> Device type, operating system, and app version</li>
-            <li><strong>Usage Data:</strong> How you interact with the app and its features</li>
-            <li><strong>Analytics:</strong> Anonymous usage statistics to improve the app</li>
+            <li>View all stored data within the app</li>
+            <li>Delete all data through the Settings menu</li>
+            <li>Remove the app entirely from your device</li>
         </ul>
-        
-        <h2>2. How We Use Your Information</h2>
-        <p>We use the information we collect to:</p>
-        <ul>
-            <li>Provide and maintain the WishAPaw service</li>
-            <li>Personalize your experience</li>
-            <li>Send you notifications about your pet's wishes (if enabled)</li>
-            <li>Improve our app and develop new features</li>
-            <li>Ensure security and prevent fraud</li>
-            <li>Comply with legal obligations</li>
-        </ul>
-        
-        <h2>3. Data Storage and Security</h2>
-        <p>Your data is stored securely using industry-standard encryption and security practices:</p>
-        <ul>
-            <li>Data is encrypted both in transit and at rest</li>
-            <li>We use secure cloud infrastructure (Supabase) with enterprise-grade security</li>
-            <li>Access to personal data is strictly limited and monitored</li>
-            <li>Regular security audits and updates</li>
-        </ul>
-        
-        <h2>4. Information Sharing</h2>
-        <p>We do not sell, trade, or rent your personal information to third parties. We may share information only in these limited circumstances:</p>
-        <ul>
-            <li><strong>Service Providers:</strong> With trusted third-party services that help us operate the app (e.g., cloud hosting, analytics)</li>
-            <li><strong>Legal Requirements:</strong> When required by law or to protect our rights</li>
-            <li><strong>With Your Consent:</strong> When you explicitly authorize us to share information</li>
-        </ul>
-        
-        <h2>5. Your Rights and Choices</h2>
-        <p>You have the following rights regarding your data:</p>
-        <ul>
-            <li><strong>Access:</strong> View your personal data at any time through the app</li>
-            <li><strong>Correction:</strong> Update or correct your information in the app settings</li>
-            <li><strong>Deletion:</strong> Request deletion of your account and all associated data</li>
-            <li><strong>Export:</strong> Request a copy of your data in a portable format</li>
-            <li><strong>Opt-Out:</strong> Disable notifications and analytics in app settings</li>
-        </ul>
-        
-        <h2>6. Children's Privacy (COPPA Compliance)</h2>
-        <p>WishAPaw is designed to be family-friendly and safe for users of all ages. We comply with the Children's Online Privacy Protection Act (COPPA):</p>
-        <ul>
-            <li>We do not knowingly collect personal information from children under 13 without parental consent</li>
-            <li>Parents can review, delete, or refuse further collection of their child's information</li>
-            <li>We do not require children to provide more information than necessary to use the app</li>
-            <li>If we discover we have collected information from a child under 13 without parental consent, we will delete it immediately</li>
-        </ul>
-        
-        <h2>7. Third-Party Services</h2>
-        <p>WishAPaw uses the following third-party services:</p>
-        <ul>
-            <li><strong>Supabase:</strong> For secure data storage and authentication</li>
-            <li><strong>Analytics:</strong> For anonymous usage statistics (you can opt out in settings)</li>
-        </ul>
-        <p>These services have their own privacy policies. We recommend reviewing them.</p>
-        
-        <h2>8. Data Retention</h2>
-        <p>We retain your data for as long as your account is active or as needed to provide you services. If you delete your account, we will delete your personal data within 30 days, except where we are required to retain it for legal purposes.</p>
-        
-        <h2>9. International Data Transfers</h2>
-        <p>Your data may be processed and stored in countries other than your own. We ensure appropriate safeguards are in place to protect your information in accordance with this Privacy Policy.</p>
-        
-        <h2>10. Changes to This Privacy Policy</h2>
-        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by:</p>
-        <ul>
-            <li>Posting the new Privacy Policy on this page</li>
-            <li>Updating the "Last Updated" date</li>
-            <li>Sending an in-app notification for material changes</li>
-        </ul>
-        
-        <h2>11. Contact Us</h2>
-        <p>If you have any questions about this Privacy Policy or your data, please contact us:</p>
         
         <div class="contact">
-            <p><strong>Email:</strong> <a href="mailto:contact.wishapaw@gmail.com">contact.wishapaw@gmail.com</a></p>
-            <p><strong>App:</strong> WishAPaw</p>
+            <h2>Contact Us</h2>
+            <p>If you have questions about this privacy policy, please contact us at:</p>
+            <p><a href="mailto:contact.wishapaw@gmail.com">contact.wishapaw@gmail.com</a></p>
+            
+            <p style="margin-top: 15px;"><strong>Mailing Address:</strong><br>
+            [Your Company Name]<br>
+            [Your Address Line 1]<br>
+            [City, State ZIP]<br>
+            [Country]</p>
         </div>
         
-        <a href="index.html" class="back-link">← Back to Legal Documents</a>
+        <p style="margin-top: 40px; padding-top: 20px; border-top: 2px solid #f0f0f0; color: #7f8c8d; font-size: 0.9em;">
+            WishAPaw is a supportive companion for children undergoing medical treatment. Made with 💛 for brave kids everywhere.
+        </p>
     </div>
 </body>
 </html>
